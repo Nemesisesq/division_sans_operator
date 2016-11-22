@@ -1,5 +1,4 @@
 def search(divisor, dividend):
-    count = 0
     min = divisor
     max = dividend
 
