@@ -4,8 +4,8 @@ from divider import divide, search
 
 
 class TestDiveder(unittest.TestCase):
-    # def test_zero(self):
-    #     self.assertRaises(Exception('Cannot divide by zero'), divide(0,0))
+    def test_zero(self):
+        self.assertRaises(Exception, lambda : divide(0,0))
 
     def test_zero_one(self):
         self.assertEqual(divide(0, 1), 0)
@@ -36,9 +36,12 @@ class TestDiveder(unittest.TestCase):
 
     def test_stco_1(self):
         self.assertEqual(divide(6, 5), [1, 1])
+
     def test_stco_2(self):
         self.assertEqual(divide(6, -5), [-2, -4])
+
     def test_stco_3(self):
         self.assertEqual(divide(-6, 5), [-2, 4])
+
     def test_stco_4(self):
         self.assertEqual(divide(-6, -5), [1, 1])
