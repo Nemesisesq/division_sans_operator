@@ -34,7 +34,7 @@ class TestDiveder(unittest.TestCase):
     def test_test_remainder(self):
         self.assertEqual(divide(5, 2), [2, 1])
 
-    def test_stco_1(self):
+    def test_stco_1(self):git
         self.assertEqual(divide(6, 5), [1, 1])
 
     def test_stco_2(self):
@@ -45,3 +45,7 @@ class TestDiveder(unittest.TestCase):
 
     def test_stco_4(self):
         self.assertEqual(divide(-6, -5), [1, 1])
+
+
+if __name__ == '__main__':
+    unittest.main()
