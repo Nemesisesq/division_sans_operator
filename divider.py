@@ -1,3 +1,7 @@
+import sys
+from functools import partial
+
+
 def search(divisor, dividend):
     min = divisor
     max = dividend
@@ -39,3 +43,11 @@ def divide(numerator, denominator):
         res = result
 
     return res
+
+
+if __name__ == "__main__":
+    d = divide(int(sys.argv[1]), int(sys.argv[2]))
+    print(d)
+
+
+
