@@ -47,7 +47,10 @@ def divide(numerator, denominator):
 
 if __name__ == "__main__":
     d = divide(int(sys.argv[1]), int(sys.argv[2]))
+
     print(d)
+    print("product ",d[0])
+    print("remainder ",d[1])
 
 
 
